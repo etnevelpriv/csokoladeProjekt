@@ -8,7 +8,7 @@ export const ChocolateCard = function (props: ChocolateCardProps) {
             </div>
             <div className="chocolate-body">
                 <ul className="csokolade-tulajdonsagok">
-                    <li>Étcsoki: {props.isDark ? "Igen" : "Nem"} </li>
+                    <li>{props.isDark ? "Ez egy étcsokoládé" : "Ez tejcsoki vagy más típus"} </li>
                     <li>Kakaó százalék: {props.cocoaPercentage}</li>
                     <li id="alapanyagokParent">Alapanyagok: {alapanyagListaMegjelenites(props.ingredients)}</li>
                 </ul>
