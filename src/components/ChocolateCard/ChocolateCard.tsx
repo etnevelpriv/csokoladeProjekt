@@ -1,7 +1,7 @@
 import type { ChocolateCardProps } from "../../models/interfaces/chocolate.Interface";
 export const ChocolateCard = function (props: ChocolateCardProps) {
     return (
-        <div className="chocolate-card">
+        <div className="chocolate-card" style={props.isDark? { backgroundColor: "#333", color: "#fff" }: { backgroundColor: "#f2f2f2", color: "#000" }}>
             <div className="chocolate-header">
                 <strong>{props.name}</strong>
                 <small>{props.brand}</small>
@@ -19,7 +19,7 @@ export const ChocolateCard = function (props: ChocolateCardProps) {
 const alapanyagListaMegjelenites = function (ingredients: string[]) {
     return (
         <ul className="alapanyagok">
-            {ingredients.map((ingredient, index)=>(
+            {ingredients.map((ingredient)=>(
                 <li className="alapanyag">{ingredient},</li>
             ))}
         </ul>
