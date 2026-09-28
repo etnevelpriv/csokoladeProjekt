@@ -19,8 +19,8 @@ export const ChocolateCard = function (props: ChocolateCardProps) {
 const alapanyagListaMegjelenites = function (ingredients: string[]) {
     return (
         <ul className="alapanyagok">
-            {ingredients.map((ingredient)=>(
-                <li className="alapanyag">{ingredient},</li>
+            {ingredients.map((ingredient, index)=>(
+                <li className="alapanyag" key={index}>{ingredient},</li>
             ))}
         </ul>
     );

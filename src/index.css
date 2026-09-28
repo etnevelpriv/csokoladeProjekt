@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.chocolate-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .chocolate-card {
+    width: 400px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    .chocolate-header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .chocolate-body {
+      text-align: start;
+      #alapanyagokParent {
+        font-weight: bold;
+      }
+    }
+  }
+}
